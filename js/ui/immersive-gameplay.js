@@ -14,9 +14,13 @@ export class ImmersiveGameplayPage {
     this.compass = null;
     this.proximityIndicator = null;
     this.starCatalog = null;
+    this._langUnsub = null;
   }
 
   async render() {
+    if (this._langUnsub) {
+      this._langUnsub();
+    }
     this.container.innerHTML = '';
 
     const state = this.store.getState();

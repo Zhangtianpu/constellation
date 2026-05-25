@@ -6,9 +6,13 @@ export class LevelSelectPage {
   constructor(container, store) {
     this.container = container;
     this.store = store;
+    this._langUnsub = null;
   }
 
   render() {
+    if (this._langUnsub) {
+      this._langUnsub();
+    }
     this._langUnsub = i18n.onLangChange(() => this.render());
     this.container.innerHTML = '';
 

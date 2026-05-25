@@ -6,10 +6,15 @@ export class HomePage {
   constructor(container, store) {
     this.container = container;
     this.store = store;
+    this._langUnsub = null;
   }
 
   render() {
-    i18n.onLangChange(() => this.render());
+    if (this._langUnsub) {
+      this._langUnsub();
+    }
+    this._langUnsub = i18n.onLangChange(() => this.render());
+
     this.container.innerHTML = '';
 
     const immersiveOk = isWebGLSupported();
@@ -92,5 +97,10 @@ export class HomePage {
     this.container.appendChild(page);
   }
 
-  destroy() {}
+  destroy() {
+    if (this._langUnsub) {
+      this._langUnsub();
+      this._langUnsub = null;
+    }
+  }
 }
