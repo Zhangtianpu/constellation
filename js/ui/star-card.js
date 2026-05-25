@@ -1,3 +1,5 @@
+import { i18n } from '../utils/i18n.js';
+
 export class StarCard {
   constructor(container, constellationData, seasonName, gameMode) {
     this.container = container;
@@ -24,7 +26,7 @@ export class StarCard {
     info.innerHTML = `
       <h2 class="star-card-name">${constellationData.name}</h2>
       <p class="star-card-name-en">${constellationData.nameEn}</p>
-      <p class="star-card-season">最佳观测：${seasonName}</p>
+      <p class="star-card-season">${i18n.t('bestViewing')}${seasonName}</p>
       <p class="star-card-story">${constellationData.story}</p>
     `;
     inner.appendChild(info);

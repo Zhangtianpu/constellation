@@ -6,6 +6,30 @@
   background: linear-gradient(180deg, var(--bg-dark) 0%, var(--bg-accent) 50%, var(--bg-deep) 100%);
   padding: 20px;
   overflow: hidden;
+  position: relative;
+}
+
+.lang-toggle-btn {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  color: rgba(200, 220, 255, 0.8);
+  padding: 6px 14px;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 13px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  z-index: 10;
+  backdrop-filter: blur(8px);
+}
+
+.lang-toggle-btn:hover {
+  background: rgba(255, 255, 255, 0.2);
+  color: #fff;
+  border-color: rgba(255, 255, 255, 0.4);
 }
 
 .home-stars-decoration {

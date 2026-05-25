@@ -1,5 +1,6 @@
 import { audioManager } from '../utils/audio.js';
 import { isWebGLSupported } from '../utils/webgl-detect.js';
+import { i18n } from '../utils/i18n.js';
 
 export class HomePage {
   constructor(container, store) {
@@ -8,6 +9,7 @@ export class HomePage {
   }
 
   render() {
+    i18n.onLangChange(() => this.render());
     this.container.innerHTML = '';
 
     const immersiveOk = isWebGLSupported();
@@ -20,11 +22,19 @@ export class HomePage {
     starsDecoration.className = 'home-stars-decoration';
     page.appendChild(starsDecoration);
 
+    const langBtn = document.createElement('button');
+    langBtn.className = 'lang-toggle-btn';
+    langBtn.textContent = i18n.t('langToggle');
+    langBtn.addEventListener('click', () => {
+      i18n.toggleLang();
+    });
+    page.appendChild(langBtn);
+
     const title = document.createElement('div');
     title.className = 'home-title';
     title.innerHTML = `
       <div class="title-star">✦</div>
-      <h1>星光星座</h1>
+      <h1>${i18n.t('appTitle')}</h1>
       <p class="subtitle">Starlight Constellation</p>
       <div class="title-star">✦</div>
     `;
@@ -32,7 +42,7 @@ export class HomePage {
 
     const desc = document.createElement('p');
     desc.className = 'home-desc';
-    desc.textContent = '在璀璨星空中，找到属于你的星座';
+    desc.textContent = i18n.t('appDesc');
     page.appendChild(desc);
 
     const buttons = document.createElement('div');
@@ -40,7 +50,7 @@ export class HomePage {
 
     const classicBtn = document.createElement('button');
     classicBtn.className = 'btn btn-primary btn-glow';
-    classicBtn.innerHTML = '<span class="mode-emoji">✨</span><span>经典模式</span><span class="mode-sub">星座连线</span>';
+    classicBtn.innerHTML = `<span class="mode-emoji">✨</span><span>${i18n.t('classicMode')}</span><span class="mode-sub">${i18n.t('classicSub')}</span>`;
     classicBtn.addEventListener('click', () => {
       audioManager.init();
       audioManager.playClick();
@@ -52,7 +62,7 @@ export class HomePage {
     if (immersiveOk) {
       const immersiveBtn = document.createElement('button');
       immersiveBtn.className = 'btn btn-immersive btn-glow';
-      immersiveBtn.innerHTML = '<span class="mode-emoji">🌌</span><span>沉浸模式</span><span class="mode-sub">星空探索</span>';
+      immersiveBtn.innerHTML = `<span class="mode-emoji">🌌</span><span>${i18n.t('immersiveMode')}</span><span class="mode-sub">${i18n.t('immersiveSub')}</span>`;
       immersiveBtn.addEventListener('click', () => {
         audioManager.init();
         audioManager.playClick();
@@ -76,7 +86,7 @@ export class HomePage {
 
     const footer = document.createElement('div');
     footer.className = 'home-footer';
-    footer.innerHTML = '<p>点击星星，连线星座，探索星空的奥秘</p>';
+    footer.innerHTML = `<p>${i18n.t('homeSubtitle')}</p>`;
     page.appendChild(footer);
 
     this.container.appendChild(page);

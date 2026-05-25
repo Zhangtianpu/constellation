@@ -3,6 +3,7 @@ import { ScoringSystem } from './scoring.js';
 import { AchievementSystem } from './achievement.js';
 import { audioManager } from '../utils/audio.js';
 import { normalizeEdge } from '../utils/math.js';
+import { i18n } from '../utils/i18n.js';
 import { StarField } from '../immersive/starfield.js';
 import { MilkyWay } from '../immersive/milkyway.js';
 import { HorizonSilhouette } from '../immersive/horizon.js';
@@ -227,7 +228,7 @@ export class ImmersiveGameEngine {
     } else {
       audioManager.playError();
       console.log('[Immersive] Invalid edge:', fromId, '->', toId, '. Valid edges:', this.checker.edges);
-      if (this.onError) this.onError('这些星星之间没有连线哦，再试试吧！');
+      if (this.onError) this.onError(i18n.t('invalidEdge'));
     }
   }
 

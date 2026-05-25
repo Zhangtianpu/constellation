@@ -1,5 +1,6 @@
 import { audioManager } from '../utils/audio.js';
 import { AchievementSystem } from '../game/achievement.js';
+import { i18n } from '../utils/i18n.js';
 
 export class ResultPage {
   constructor(container, store) {
@@ -49,7 +50,7 @@ export class ResultPage {
 
     const scoreEl = document.createElement('div');
     scoreEl.className = 'result-score';
-    scoreEl.innerHTML = `<span class="score-label">得分</span><span class="score-value">${result.score}</span>`;
+    scoreEl.innerHTML = `<span class="score-label">${i18n.t('score')}</span><span class="score-value">${result.score}</span>`;
     card.appendChild(scoreEl);
 
     const statsEl = document.createElement('div');
@@ -57,21 +58,21 @@ export class ResultPage {
     const m = Math.floor(result.time / 60);
     const s = Math.floor(result.time % 60);
     statsEl.innerHTML = `
-      <div class="stat-item"><span class="stat-icon">⏱</span><span class="stat-label">用时</span><span class="stat-value">${m}:${s.toString().padStart(2, '0')}</span></div>
-      <div class="stat-item"><span class="stat-icon">💡</span><span class="stat-label">提示</span><span class="stat-value">${result.hintsUsed}次</span></div>
-      <div class="stat-item"><span class="stat-icon">↩</span><span class="stat-label">撤销</span><span class="stat-value">${result.undoCount}次</span></div>
+      <div class="stat-item"><span class="stat-icon">⏱</span><span class="stat-label">${i18n.t('time')}</span><span class="stat-value">${m}:${s.toString().padStart(2, '0')}</span></div>
+      <div class="stat-item"><span class="stat-icon">💡</span><span class="stat-label">${i18n.t('hints')}</span><span class="stat-value">${result.hintsUsed}${i18n.t('times')}</span></div>
+      <div class="stat-item"><span class="stat-icon">↩</span><span class="stat-label">${i18n.t('undos')}</span><span class="stat-value">${result.undoCount}${i18n.t('times')}</span></div>
     `;
     card.appendChild(statsEl);
 
     const storyEl = document.createElement('div');
     storyEl.className = 'result-story glass-panel';
-    storyEl.innerHTML = `<h3>📖 星座故事</h3><p>${constellation.story}</p>`;
+    storyEl.innerHTML = `<h3>📖 ${i18n.t('constellationStory')}</h3><p>${constellation.story}</p>`;
     card.appendChild(storyEl);
 
     if (result.newAchievements && result.newAchievements.length > 0) {
       const achEl = document.createElement('div');
       achEl.className = 'result-achievements';
-      achEl.innerHTML = '<h3>🏆 新成就解锁！</h3>';
+      achEl.innerHTML = `<h3>🏆 ${i18n.t('newAchievement')}</h3>`;
       for (const ach of result.newAchievements) {
         const achItem = document.createElement('div');
         achItem.className = 'achievement-item';
@@ -94,7 +95,7 @@ export class ResultPage {
     if (hasNext) {
       const nextBtn = document.createElement('button');
       nextBtn.className = 'btn btn-primary btn-glow';
-      nextBtn.textContent = '✨ 下一关';
+      nextBtn.textContent = i18n.t('nextLevel');
       nextBtn.addEventListener('click', () => {
         audioManager.playClick();
         this.store.navigate(targetPage, {
@@ -106,7 +107,7 @@ export class ResultPage {
     } else if (hasNextSeason) {
       const nextSeasonBtn = document.createElement('button');
       nextSeasonBtn.className = 'btn btn-primary btn-glow';
-      nextSeasonBtn.textContent = '🌟 下一季';
+      nextSeasonBtn.textContent = i18n.t('nextSeason');
       nextSeasonBtn.addEventListener('click', () => {
         audioManager.playClick();
         this.store.navigate(targetPage, {
@@ -119,7 +120,7 @@ export class ResultPage {
 
     const replayBtn = document.createElement('button');
     replayBtn.className = 'btn btn-secondary';
-    replayBtn.textContent = '🔄 再玩一次';
+    replayBtn.textContent = i18n.t('replay');
     replayBtn.addEventListener('click', () => {
       audioManager.playClick();
       this.store.navigate(targetPage, {
@@ -131,7 +132,7 @@ export class ResultPage {
 
     const backBtn = document.createElement('button');
     backBtn.className = 'btn btn-secondary';
-    backBtn.textContent = '🗺 关卡选择';
+    backBtn.textContent = i18n.t('levelSelect');
     backBtn.addEventListener('click', () => {
       audioManager.playClick();
       this.store.navigate('levelSelect');

@@ -1,5 +1,6 @@
 import { audioManager } from '../utils/audio.js';
 import { isWebGLSupported } from '../utils/webgl-detect.js';
+import { i18n } from '../utils/i18n.js';
 
 export class LevelSelectPage {
   constructor(container, store) {
@@ -8,6 +9,7 @@ export class LevelSelectPage {
   }
 
   render() {
+    this._langUnsub = i18n.onLangChange(() => this.render());
     this.container.innerHTML = '';
 
     const state = this.store.getState();
@@ -22,7 +24,7 @@ export class LevelSelectPage {
 
     const backBtn = document.createElement('button');
     backBtn.className = 'btn btn-back';
-    backBtn.textContent = '← 返回';
+    backBtn.textContent = i18n.t('back');
     backBtn.addEventListener('click', () => {
       audioManager.playClick();
       this.store.navigate('home');
@@ -31,7 +33,7 @@ export class LevelSelectPage {
 
     const title = document.createElement('h2');
     title.className = 'level-title';
-    title.textContent = '选择星座';
+    title.textContent = i18n.t('selectConstellation');
     header.appendChild(title);
 
     const modeToggle = document.createElement('div');
@@ -39,7 +41,7 @@ export class LevelSelectPage {
 
     const classicTab = document.createElement('button');
     classicTab.className = `mode-tab ${gameMode === 'classic' ? 'active' : ''}`;
-    classicTab.textContent = '✨ 经典';
+    classicTab.textContent = '✨ ' + i18n.t('classicMode');
     classicTab.addEventListener('click', () => {
       audioManager.playClick();
       this.store.setState({ gameMode: 'classic' });
@@ -50,7 +52,7 @@ export class LevelSelectPage {
     if (immersiveOk) {
       const immersiveTab = document.createElement('button');
       immersiveTab.className = `mode-tab ${gameMode === 'immersive' ? 'active' : ''}`;
-      immersiveTab.textContent = '🌌 沉浸';
+      immersiveTab.textContent = '🌌 ' + i18n.t('immersiveMode');
       immersiveTab.addEventListener('click', () => {
         audioManager.playClick();
         this.store.setState({ gameMode: 'immersive' });
@@ -91,7 +93,7 @@ export class LevelSelectPage {
         const card = document.createElement('div');
         card.className = `constellation-card ${isUnlocked ? 'unlocked' : 'locked'} ${isCompleted ? 'completed' : ''}`;
 
-        const diffLabel = { easy: '初级', medium: '中级', hard: '高级' }[constellation.difficulty] || '';
+        const diffLabel = { easy: i18n.t('easy'), medium: i18n.t('medium'), hard: i18n.t('hard') }[constellation.difficulty] || '';
 
         card.innerHTML = `
           <div class="card-icon">${isUnlocked ? (isCompleted ? '⭐' : '✦') : '🔒'}</div>
@@ -122,5 +124,7 @@ export class LevelSelectPage {
     this.container.appendChild(page);
   }
 
-  destroy() {}
+  destroy() {
+    if (this._langUnsub) this._langUnsub();
+  }
 }

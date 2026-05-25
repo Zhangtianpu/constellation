@@ -11,7 +11,9 @@
           "nameEn": "Boötes",
           "difficulty": "easy",
           "description": "春夜星空中形似风筝的星座，其主星大角星是北天最亮的恒星之一",
+          "descriptionEn": "A kite-shaped constellation in spring sky, featuring Arcturus, one of the brightest stars in the northern hemisphere",
           "story": "在希腊神话中，牧夫座代表的是发明犁杖的阿尔卡斯，宙斯将他升上天空，让他永远在北天闪耀。大角星如同一颗橙色的宝石，指引着牧夫的方向。",
+          "storyEn": "In Greek mythology, Boötes represents Arcas, the inventor of the plow. Zeus placed him in the sky to shine forever in the north. Arcturus, like an orange gem, guides the way to the Herdsman.",
           "stars": [
             {
               "id": 0,
@@ -154,7 +156,9 @@
           "nameEn": "Libra",
           "difficulty": "easy",
           "description": "黄道十二宫中唯一以物品命名的星座，象征着公平与正义",
+          "descriptionEn": "The only zodiac constellation representing an inanimate object — the scales of justice",
           "story": "天秤座被认为是正义女神阿斯特赖亚手中的天平，用来衡量人间的善恶。它也是夜空中最优雅的星座之一，四颗主星构成一个简洁的菱形。",
+          "storyEn": "Libra represents the scales of Astraea, the goddess of justice. She used these scales to weigh the deeds of mortals. When humanity grew wicked, she left Earth and ascended to the heavens, her scales forever balanced in the night sky.",
           "stars": [
             {
               "id": 0,
@@ -265,7 +269,9 @@
           "nameEn": "Virgo",
           "difficulty": "medium",
           "description": "黄道十二宫中面积最大的星座，主星角宿一是一颗蓝白色的亮星",
+          "descriptionEn": "The second largest constellation in the sky, representing the goddess of harvest",
           "story": "室女座代表的是正义女神阿斯特赖亚，她在黄金时代与人类共同生活，随着人类堕落，她失望地离开了人间，升上天空成为星座。角宿一是她手中闪耀的麦穗。",
+          "storyEn": "Virgo represents Demeter, the goddess of agriculture and harvest. When her daughter Persephone was taken to the underworld, Demeter's grief caused winter to fall upon the Earth. The constellation rises in spring, bringing warmth and harvest back to the world.",
           "stars": [
             {
               "id": 0,
@@ -430,7 +436,9 @@
           "nameEn": "Leo",
           "difficulty": "medium",
           "description": "黄道十二宫之一，春季夜空中最显著的星座，形似一头蹲伏的雄狮",
+          "descriptionEn": "A majestic zodiac constellation, its main star Regulus is known as the Heart of the Lion",
           "story": "狮子座代表的是涅墨亚森林中的巨狮，它的皮毛刀枪不入。大力神赫拉克勒斯用双手将其扼杀，完成了他的第一项伟业。宙斯将巨狮升上天空，成为春夜最耀眼的星座。",
+          "storyEn": "Leo represents the Nemean Lion, a fearsome beast with an impenetrable hide. Hercules slew the lion as his first labor, and Zeus placed the lion among the stars to honor the great battle.",
           "stars": [
             {
               "id": 0,
@@ -616,7 +624,9 @@
           "nameEn": "Lyra",
           "difficulty": "easy",
           "description": "虽小却明亮的星座，主星织女星是夏季大三角之一",
+          "descriptionEn": "A small but prominent constellation featuring Vega, the fifth brightest star in the sky",
           "story": "天琴座代表的是俄耳甫斯的七弦琴，他的琴声能令万物动容。在他死后，宙斯将七弦琴升上天空。织女星则是中国牛郎织女传说中织女的化身。",
+          "storyEn": "Lyra represents the lyre of Orpheus, the legendary musician whose music could charm all living things. After his death, the Muses placed his lyre among the stars, where its music still echoes through the cosmos.",
           "stars": [
             {
               "id": 0,
@@ -745,7 +755,9 @@
           "nameEn": "Aquila",
           "difficulty": "easy",
           "description": "银河边的星座，主星牛郎星与织女星隔河相望",
+          "descriptionEn": "A constellation near the celestial equator, featuring the bright star Altair",
           "story": "天鹰座代表的是宙斯的神鹰，它为宙斯掳走了美少年伽倪墨得斯。而牛郎星在中国传说中是牛郎的化身，与织女星隔银河相望，每年七夕才能相会。",
+          "storyEn": "Aquila represents the eagle that carried Zeus's thunderbolts. In Chinese mythology, Altair is the Cowherd who meets his beloved Weaver Girl (Vega) once a year across the Milky Way on the seventh day of the seventh lunar month.",
           "stars": [
             {
               "id": 0,
@@ -870,7 +882,9 @@
           "nameEn": "Cygnus",
           "difficulty": "medium",
           "description": "银河中展翅飞翔的天鹅，主星天津四是夏季大三角之一",
+          "descriptionEn": "A cross-shaped constellation flying along the Milky Way, also known as the Northern Cross",
           "story": "天鹅座代表的是宙斯变身的天鹅，他以此形态接近斯巴达王后勒达。也有传说这是音乐家俄耳甫斯死后化成的天鹅，被放置在天琴座旁边，永远弹奏着天琴。",
+          "storyEn": "Cygnus represents Zeus disguised as a swan to visit the mortal Leda. The swan flies forever along the luminous river of the Milky Way, its wings spread wide among the stars.",
           "stars": [
             {
               "id": 0,
@@ -1031,7 +1045,9 @@
           "nameEn": "Scorpius",
           "difficulty": "hard",
           "description": "夏夜银河边最壮观的星座之一，主星心宿二是一颗红超巨星",
+          "descriptionEn": "A striking zodiac constellation with a distinctive curved tail, featuring the red supergiant Antares",
           "story": "天蝎座与猎户座永远不会同时出现在天空中。传说猎户俄里翁狂妄地声称要杀尽世间所有猛兽，大地女神盖亚派出毒蝎将其杀死。宙斯将二者分置天空两端，永远无法相见。",
+          "storyEn": "Scorpius represents the scorpion sent by Gaia to slay the boastful hunter Orion. The scorpion succeeded, and both were placed in the sky on opposite sides, so they would never meet again. When Scorpius rises, Orion flees below the horizon.",
           "stars": [
             {
               "id": 0,
@@ -1258,7 +1274,9 @@
           "nameEn": "Cassiopeia",
           "difficulty": "easy",
           "description": "北天著名的W形星座，终年可见，是寻找北极星的重要指引",
+          "descriptionEn": "An easily recognizable W-shaped constellation, circling the north celestial pole",
           "story": "仙后座代表的是埃塞俄比亚王后卡西奥佩亚，她因夸耀自己的美貌而触怒海神，被绑在椅子上放入天空，永远绕北极旋转，有时头朝下以示惩罚。",
+          "storyEn": "Cassiopeia was a vain queen who boasted of her beauty, angering the sea god Poseidon. As punishment, she was placed in the sky on her throne, sometimes hanging upside down as the stars rotate, a reminder of the cost of vanity.",
           "stars": [
             {
               "id": 0,
@@ -1383,7 +1401,9 @@
           "nameEn": "Pegasus",
           "difficulty": "medium",
           "description": "秋夜星空的标志，四颗亮星组成著名的'秋季四边形'",
+          "descriptionEn": "A large constellation famous for the Great Square, representing the winged horse",
           "story": "飞马座代表的是珀耳修斯从美杜莎颈中飞出的天马珀伽索斯。它后来成为柏勒洛丰的坐骑，协助英雄击败了喷火怪兽喀迈拉。最终珀伽索斯被宙斯升上天空。",
+          "storyEn": "Pegasus is the winged horse born from the blood of Medusa when Perseus slew her. The hero Bellerophon tamed Pegasus and rode him into battle, but when Bellerophon tried to fly to Olympus, Zeus sent a gadfly to throw him off. Pegasus alone was welcomed among the stars.",
           "stars": [
             {
               "id": 0,
@@ -1548,7 +1568,9 @@
           "nameEn": "Andromeda",
           "difficulty": "medium",
           "description": "以仙女座星系闻名的星座，M31是肉眼可见的最远天体",
+          "descriptionEn": "A large constellation featuring the Andromeda Galaxy, the most distant object visible to the naked eye",
           "story": "仙女座代表的是埃塞俄比亚公主安德洛墨达，她因母亲的自负而被献祭给海怪，最终被英雄珀耳修斯所救。仙女座星系如同她飘散的长发，在秋夜中闪耀。",
+          "storyEn": "Andromeda was a princess chained to a rock as sacrifice to a sea monster, punished for her mother Cassiopeia's vanity. The hero Perseus rescued her, and they were placed together among the stars as a symbol of love conquering all.",
           "stars": [
             {
               "id": 0,
@@ -1709,7 +1731,9 @@
           "nameEn": "Perseus",
           "difficulty": "medium",
           "description": "英雄星座，每年八月英仙座流星雨从这里辐射而出",
+          "descriptionEn": "A constellation featuring the bright star Algol, the famous Demon Star",
           "story": "英仙座代表的是希腊英雄珀耳修斯，他手持美杜莎的头颅，脚踏飞马。大陵五（恶魔之星）就是美杜莎那只令人石化的眼睛，它是一颗著名的食变星。",
+          "storyEn": "Perseus is the legendary hero who slew Medusa the Gorgon using his shield as a mirror. He rescued Andromeda from a sea monster and founded the city of Mycenae. His constellation holds the head of Medusa, with Algol marking her winking eye.",
           "stars": [
             {
               "id": 0,
@@ -1877,7 +1901,9 @@
           "nameEn": "Taurus",
           "difficulty": "medium",
           "description": "黄道星座之一，拥有著名的昴星团和毕星团",
+          "descriptionEn": "A zodiac constellation featuring the bright orange star Aldebaran and the Pleiades star cluster",
           "story": "金牛座代表的是宙斯变身的白色公牛，他以此形态将腓尼基公主欧罗巴驮过大海。毕宿五是金牛血红的眼睛，昴星团则是它肩上的七姐妹。",
+          "storyEn": "Taurus represents the white bull that Zeus disguised himself as to abduct the princess Europa. She climbed on the bull's back, and he carried her across the sea to Crete. The Pleiades, riding on the bull's shoulder, are the seven sisters who also found their place among the stars.",
           "stars": [
             {
               "id": 0,
@@ -2038,7 +2064,9 @@
           "nameEn": "Orion",
           "difficulty": "medium",
           "description": "冬夜最壮观的星座，三颗腰带星是夜空中最易辨认的标志",
+          "descriptionEn": "One of the most recognizable constellations, featuring the three-star belt and the bright stars Betelgeuse and Rigel",
           "story": "猎户座代表的是希腊神话中最伟大的猎人俄里翁。他是海神波塞冬之子，能在海面上行走。因狂妄自大而被毒蝎杀死，被宙斯升上天空，成为冬夜最耀眼的星座。",
+          "storyEn": "Orion was the greatest hunter who ever lived, but his arrogance led to his doom. After being stung by a scorpion sent by Gaia, he was placed among the stars. His belt of three stars guides the way to other constellations across the winter sky.",
           "stars": [
             {
               "id": 0,
@@ -2235,7 +2263,9 @@
           "nameEn": "Gemini",
           "difficulty": "medium",
           "description": "黄道星座之一，两颗主星代表神话中的孪生兄弟",
+          "descriptionEn": "A zodiac constellation featuring the twin stars Castor and Pollux",
           "story": "双子座代表的是宙斯之子卡斯托耳和波吕丢刻斯。兄弟二人一同参加了阿尔戈号远征，卡斯托耳死后，波吕丢刻斯请求宙斯让他们共享不朽，于是兄弟二人交替在冥界和天界生活。",
+          "storyEn": "Gemini represents the twin brothers Castor and Pollux. Though Castor was mortal and Pollux was divine, their bond was so strong that when Castor died, Pollux begged Zeus to let them share immortality. Now they shine together forever in the sky.",
           "stars": [
             {
               "id": 0,
@@ -2414,7 +2444,9 @@
           "nameEn": "Canis Major",
           "difficulty": "medium",
           "description": "拥有全天最亮恒星天狼星的星座，冬夜南方天空的明珠",
+          "descriptionEn": "Home to Sirius, the brightest star in the entire night sky",
           "story": "大犬座代表的是猎户俄里翁的忠犬西里斯。在俄里翁被毒蝎杀死后，忠犬日夜守候在主人身旁，最终被宙斯升上天空。天狼星是夜空中最亮的恒星，如同犬的眼睛般闪烁。",
+          "storyEn": "Canis Major is the greater hunting dog of Orion, faithfully following its master across the winter sky. Sirius, the Dog Star, was so bright that ancient Egyptians based their calendar on its rising, marking the annual flooding of the Nile.",
           "stars": [
             {
               "id": 0,

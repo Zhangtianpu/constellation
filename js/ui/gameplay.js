@@ -1,6 +1,7 @@
 import { CanvasRenderer } from '../renderer/canvas.js';
 import { GameEngine } from '../game/engine.js';
 import { audioManager } from '../utils/audio.js';
+import { i18n } from '../utils/i18n.js';
 
 export class GameplayPage {
   constructor(container, store) {
@@ -71,20 +72,20 @@ export class GameplayPage {
 
     const hintBtn = document.createElement('button');
     hintBtn.className = 'btn btn-action glass-panel';
-    hintBtn.innerHTML = '<span class="btn-icon">💡</span><span class="btn-label">提示</span>';
+    hintBtn.innerHTML = `<span class="btn-icon">💡</span><span class="btn-label">${i18n.t('hint')}</span>`;
     hintBtn.addEventListener('click', () => {
       const hint = this.engine.useHint();
       if (hint) {
         this.showHint(hint.type === 'start'
-          ? '从高亮的星星开始连线'
-          : '连接到高亮的星星');
+          ? i18n.t('hintStart')
+          : i18n.t('hintConnect'));
       }
     });
     bottomBar.appendChild(hintBtn);
 
     const undoBtn = document.createElement('button');
     undoBtn.className = 'btn btn-action glass-panel';
-    undoBtn.innerHTML = '<span class="btn-icon">↩</span><span class="btn-label">撤销</span>';
+    undoBtn.innerHTML = `<span class="btn-icon">↩</span><span class="btn-label">${i18n.t('undo')}</span>`;
     undoBtn.addEventListener('click', () => {
       this.engine.undo();
     });
@@ -92,7 +93,7 @@ export class GameplayPage {
 
     const resetBtn = document.createElement('button');
     resetBtn.className = 'btn btn-action glass-panel';
-    resetBtn.innerHTML = '<span class="btn-icon">🔄</span><span class="btn-label">重置</span>';
+    resetBtn.innerHTML = `<span class="btn-icon">🔄</span><span class="btn-label">${i18n.t('reset')}</span>`;
     resetBtn.addEventListener('click', () => {
       this.engine.stop();
       this.engine.start(constellation);

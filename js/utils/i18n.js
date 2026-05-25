@@ -1,0 +1,136 @@
+const translations = {
+  en: {
+    appTitle: 'Starlight Constellation',
+    appDesc: 'Find your constellation among the stars',
+    homeSubtitle: 'Connect the stars, discover constellations, explore the cosmos',
+    classicMode: 'Classic',
+    classicSub: 'Constellation Lines',
+    immersiveMode: 'Immersive',
+    immersiveSub: 'Star Explorer',
+    selectConstellation: 'Select Constellation',
+    back: '← Back',
+    hint: 'Hint',
+    undo: 'Undo',
+    reset: 'Reset',
+    hintStart: 'Start connecting from the highlighted star',
+    hintConnect: 'Connect to the highlighted star',
+    rotateHint: 'Rotate to find the constellation',
+    score: 'Score',
+    time: 'Time',
+    hints: 'Hints',
+    times: 'times',
+    undos: 'Undos',
+    constellationStory: 'Constellation Story',
+    newAchievement: 'New Achievement!',
+    nextLevel: '✨ Next',
+    nextSeason: '🌟 Next Season',
+    replay: '🔄 Replay',
+    levelSelect: '🗺 Levels',
+    easy: 'Easy',
+    medium: 'Medium',
+    hard: 'Hard',
+    bestViewing: 'Best viewing: ',
+    immersiveError: 'Immersive mode failed to load',
+    immersiveErrorDesc: 'Your browser may not support WebGL. Please try Classic mode.',
+    returnBtn: 'Back',
+    spring: 'Spring Sky',
+    summer: 'Summer Sky',
+    autumn: 'Autumn Sky',
+    winter: 'Winter Sky',
+    invalidEdge: 'These stars cannot be connected. Try again!',
+    langToggle: '中文',
+  },
+  zh: {
+    appTitle: '星光星座',
+    appDesc: '在璀璨星空中，找到属于你的星座',
+    homeSubtitle: '点击星星，连线星座，探索星空的奥秘',
+    classicMode: '经典模式',
+    classicSub: '星座连线',
+    immersiveMode: '沉浸模式',
+    immersiveSub: '星空探索',
+    selectConstellation: '选择星座',
+    back: '← 返回',
+    hint: '提示',
+    undo: '撤销',
+    reset: '重置',
+    hintStart: '从高亮的星星开始连线',
+    hintConnect: '连接到高亮的星星',
+    rotateHint: '旋转视角寻找星座',
+    score: '得分',
+    time: '用时',
+    hints: '提示',
+    times: '次',
+    undos: '撤销',
+    constellationStory: '星座故事',
+    newAchievement: '新成就解锁！',
+    nextLevel: '✨ 下一关',
+    nextSeason: '🌟 下一季',
+    replay: '🔄 再玩一次',
+    levelSelect: '🗺 关卡选择',
+    easy: '初级',
+    medium: '中级',
+    hard: '高级',
+    bestViewing: '最佳观测：',
+    immersiveError: '沉浸模式加载失败',
+    immersiveErrorDesc: '您的浏览器可能不支持 WebGL，请尝试经典模式',
+    returnBtn: '返回',
+    spring: '春夜星空',
+    summer: '夏夜星空',
+    autumn: '秋夜星空',
+    winter: '冬夜星空',
+    invalidEdge: '这些星星之间没有连线哦，再试试吧！',
+    langToggle: 'EN',
+  },
+};
+
+class I18n {
+  constructor() {
+    this.lang = 'en';
+    this.listeners = [];
+    const saved = localStorage.getItem('lang');
+    if (saved && translations[saved]) {
+      this.lang = saved;
+    }
+  }
+
+  t(key) {
+    return translations[this.lang]?.[key] || translations.en[key] || key;
+  }
+
+  setLang(lang) {
+    if (lang === this.lang) return;
+    this.lang = lang;
+    localStorage.setItem('lang', lang);
+    document.documentElement.lang = lang === 'zh' ? 'zh-CN' : 'en';
+    for (const listener of this.listeners) {
+      listener(lang);
+    }
+  }
+
+  toggleLang() {
+    this.setLang(this.lang === 'en' ? 'zh' : 'en');
+  }
+
+  getLang() {
+    return this.lang;
+  }
+
+  onLangChange(listener) {
+    this.listeners.push(listener);
+    return () => {
+      this.listeners = this.listeners.filter(l => l !== listener);
+    };
+  }
+
+  getSeasonName(seasonIdx) {
+    const keys = ['spring', 'summer', 'autumn', 'winter'];
+    return this.t(keys[seasonIdx] || 'spring');
+  }
+
+  getDifficulty(diff) {
+    const map = { easy: 'easy', medium: 'medium', hard: 'hard' };
+    return this.t(map[diff] || diff);
+  }
+}
+
+export const i18n = new I18n();

@@ -3,6 +3,7 @@ import { Compass } from '../immersive/compass.js';
 import { ProximityIndicator } from '../immersive/proximity-indicator.js';
 import { StarCard } from './star-card.js';
 import { audioManager } from '../utils/audio.js';
+import { i18n } from '../utils/i18n.js';
 
 export class ImmersiveGameplayPage {
   constructor(container, store) {
@@ -68,7 +69,7 @@ export class ImmersiveGameplayPage {
 
     const hintPanel = document.createElement('div');
     hintPanel.className = 'immersive-hint-panel glass-panel';
-    hintPanel.innerHTML = `<div class="hint-icon">💡</div><div class="hint-text-immersive">${constellation.directionHint || '旋转视角寻找星座'}</div>`;
+    hintPanel.innerHTML = `<div class="hint-icon">💡</div><div class="hint-text-immersive">${constellation.directionHint || i18n.t('rotateHint')}</div>`;
     overlay.appendChild(hintPanel);
 
     const bottomBar = document.createElement('div');
@@ -76,7 +77,7 @@ export class ImmersiveGameplayPage {
 
     const hintBtn = document.createElement('button');
     hintBtn.className = 'btn btn-action glass-panel';
-    hintBtn.innerHTML = '<span class="btn-icon">💡</span><span class="btn-label">提示</span>';
+    hintBtn.innerHTML = `<span class="btn-icon">💡</span><span class="btn-label">${i18n.t('hint')}</span>`;
     hintBtn.addEventListener('click', () => {
       const text = this.engine.useHint();
       if (text) {
@@ -89,7 +90,7 @@ export class ImmersiveGameplayPage {
 
     const undoBtn = document.createElement('button');
     undoBtn.className = 'btn btn-action glass-panel';
-    undoBtn.innerHTML = '<span class="btn-icon">↩</span><span class="btn-label">撤销</span>';
+    undoBtn.innerHTML = `<span class="btn-icon">↩</span><span class="btn-label">${i18n.t('undo')}</span>`;
     undoBtn.addEventListener('click', () => {
       this.engine.undo();
     });
@@ -97,7 +98,7 @@ export class ImmersiveGameplayPage {
 
     const resetBtn = document.createElement('button');
     resetBtn.className = 'btn btn-action glass-panel';
-    resetBtn.innerHTML = '<span class="btn-icon">🔄</span><span class="btn-label">重置</span>';
+    resetBtn.innerHTML = `<span class="btn-icon">🔄</span><span class="btn-label">${i18n.t('reset')}</span>`;
     resetBtn.addEventListener('click', () => {
       this.destroy();
       this.render();
@@ -116,6 +117,8 @@ export class ImmersiveGameplayPage {
 
     this.compass = new Compass(page);
     this.proximityIndicator = new ProximityIndicator(page);
+
+    this._langUnsub = i18n.onLangChange(() => this.render());
 
     try {
       if (!this.starCatalog) {
@@ -146,8 +149,7 @@ export class ImmersiveGameplayPage {
       };
 
       this.engine.onComplete = (result) => {
-        const seasonNames = ['春夜星空', '夏夜星空', '秋夜星空', '冬夜星空'];
-        const seasonName = seasonNames[seasonIdx] || '';
+        const seasonName = i18n.getSeasonName(seasonIdx);
         const gameMode = this.store.getState().gameMode || 'immersive';
         const starCard = new StarCard(page, constellation, seasonName, gameMode);
 
@@ -199,9 +201,9 @@ export class ImmersiveGameplayPage {
       const errorEl = document.createElement('div');
       errorEl.className = 'immersive-error glass-panel';
       errorEl.innerHTML = `
-        <h3>沉浸模式加载失败</h3>
-        <p>您的浏览器可能不支持 WebGL，请尝试经典模式</p>
-        <button class="btn btn-primary" onclick="history.back()">返回</button>
+        <h3>${i18n.t('immersiveError')}</h3>
+        <p>${i18n.t('immersiveErrorDesc')}</p>
+        <button class="btn btn-primary" onclick="history.back()">${i18n.t('returnBtn')}</button>
       `;
       page.appendChild(errorEl);
     }
@@ -219,6 +221,7 @@ export class ImmersiveGameplayPage {
   }
 
   destroy() {
+    if (this._langUnsub) this._langUnsub();
     if (this.engine) this.engine.destroy();
     this.engine = null;
     if (this.compass) this.compass.dispose();

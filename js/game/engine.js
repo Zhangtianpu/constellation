@@ -3,6 +3,7 @@ import { ScoringSystem } from './scoring.js';
 import { AchievementSystem } from './achievement.js';
 import { audioManager } from '../utils/audio.js';
 import { normalizeEdge } from '../utils/math.js';
+import { i18n } from '../utils/i18n.js';
 
 export class GameEngine {
   constructor(renderer, store) {
@@ -118,7 +119,7 @@ export class GameEngine {
     } else {
       this.addErrorLine(fromId, toId);
       audioManager.playError();
-      if (this.onError) this.onError('这些星星之间没有连线哦，再试试吧！');
+      if (this.onError) this.onError(i18n.t('invalidEdge'));
     }
   }
 
