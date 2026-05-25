@@ -1,3 +1,5 @@
+import { i18n } from '../utils/i18n.js';
+
 export class HorizonSilhouette {
   constructor(THREE, scene) {
     this.THREE = THREE;
@@ -8,10 +10,10 @@ export class HorizonSilhouette {
 
   addCompassMarkers(THREE, scene) {
     const labels = [
-      { text: '北', angle: 0 },
-      { text: '东', angle: 90 },
-      { text: '南', angle: 180 },
-      { text: '西', angle: 270 },
+      { text: i18n.t('north'), angle: 0 },
+      { text: i18n.t('east'), angle: 90 },
+      { text: i18n.t('south'), angle: 180 },
+      { text: i18n.t('west'), angle: 270 },
     ];
 
     for (const label of labels) {

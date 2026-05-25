@@ -1,15 +1,24 @@
+import { i18n } from '../utils/i18n.js';
+
 export class Compass {
   constructor(container) {
     this.container = container;
+    this._langUnsub = null;
     this.el = document.createElement('div');
     this.el.className = 'compass-overlay';
-    this.el.innerHTML = `
-      <div class="compass-n">北</div>
-      <div class="compass-e">东</div>
-      <div class="compass-s">南</div>
-      <div class="compass-w">西</div>
-    `;
+    this._updateLabels();
     container.appendChild(this.el);
+
+    this._langUnsub = i18n.onLangChange(() => this._updateLabels());
+  }
+
+  _updateLabels() {
+    this.el.innerHTML = `
+      <div class="compass-n">${i18n.t('north')}</div>
+      <div class="compass-e">${i18n.t('east')}</div>
+      <div class="compass-s">${i18n.t('south')}</div>
+      <div class="compass-w">${i18n.t('west')}</div>
+    `;
   }
 
   update(azimuth) {
@@ -40,6 +49,7 @@ export class Compass {
   }
 
   dispose() {
+    if (this._langUnsub) this._langUnsub();
     if (this.el.parentElement) {
       this.el.parentElement.removeChild(this.el);
     }

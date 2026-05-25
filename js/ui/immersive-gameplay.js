@@ -73,7 +73,7 @@ export class ImmersiveGameplayPage {
 
     const hintPanel = document.createElement('div');
     hintPanel.className = 'immersive-hint-panel glass-panel';
-    hintPanel.innerHTML = `<div class="hint-icon">💡</div><div class="hint-text-immersive">${constellation.directionHint || i18n.t('rotateHint')}</div>`;
+    hintPanel.innerHTML = `<div class="hint-icon">💡</div><div class="hint-text-immersive">${i18n.constellationHint(constellation) || i18n.t('rotateHint')}</div>`;
     overlay.appendChild(hintPanel);
 
     const bottomBar = document.createElement('div');

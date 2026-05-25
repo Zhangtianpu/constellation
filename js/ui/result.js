@@ -76,7 +76,7 @@ export class ResultPage {
       for (const ach of result.newAchievements) {
         const achItem = document.createElement('div');
         achItem.className = 'achievement-item';
-        achItem.innerHTML = `<span class="ach-icon">${ach.icon}</span><span class="ach-name">${ach.name}</span><span class="ach-desc">${ach.description}</span>`;
+        achItem.innerHTML = `<span class="ach-icon">${ach.icon}</span><span class="ach-name">${i18n.achievementName(ach)}</span><span class="ach-desc">${i18n.achievementDesc(ach)}</span>`;
         achEl.appendChild(achItem);
       }
       card.appendChild(achEl);

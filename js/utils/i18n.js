@@ -39,6 +39,25 @@ const translations = {
     winter: 'Winter Sky',
     invalidEdge: 'These stars cannot be connected. Try again!',
     langToggle: '中文',
+    north: 'N',
+    east: 'E',
+    south: 'S',
+    west: 'W',
+    hintRotate: 'Rotate to find the constellation',
+    hintShape: 'Look for the pulsing bright stars',
+    hintConnect3d: 'Reference lines shown. Click the bright stars to connect',
+    achFirstConstellation: 'First Steps',
+    achFirstConstellationDesc: 'Complete your first constellation',
+    achHunter: 'Constellation Hunter',
+    achHunterDesc: 'Complete 10 constellations',
+    achMaster: 'Star Master',
+    achMasterDesc: 'Complete all constellations',
+    achPerfect: 'Perfect Lines',
+    achPerfectDesc: 'Complete a constellation without hints',
+    achSpeed: 'Lightning Hands',
+    achSpeedDesc: 'Complete a constellation in 30 seconds',
+    achSeasons: 'Four Seasons',
+    achSeasonsDesc: 'Complete all season groups',
   },
   zh: {
     appTitle: '星光星座',
@@ -80,6 +99,25 @@ const translations = {
     winter: '冬夜星空',
     invalidEdge: '这些星星之间没有连线哦，再试试吧！',
     langToggle: 'EN',
+    north: '北',
+    east: '东',
+    south: '南',
+    west: '西',
+    hintRotate: '旋转视角寻找星座',
+    hintShape: '注意脉动的亮星',
+    hintConnect3d: '参考连线已显示，点击亮星完成连线',
+    achFirstConstellation: '初识星空',
+    achFirstConstellationDesc: '完成第一个星座',
+    achHunter: '星座猎人',
+    achHunterDesc: '完成10个星座',
+    achMaster: '星空大师',
+    achMasterDesc: '完成所有星座',
+    achPerfect: '完美连线',
+    achPerfectDesc: '不使用提示完成一个星座',
+    achSpeed: '闪电之手',
+    achSpeedDesc: '30秒内完成一个星座',
+    achSeasons: '四季守望',
+    achSeasonsDesc: '完成所有季节组',
   },
 };
 
@@ -151,6 +189,42 @@ class I18n {
     if (!c) return '';
     if (this.lang === 'zh') return c.directionHint || c.description;
     return c.directionHintEn || c.descriptionEn || c.directionHint || c.description;
+  }
+
+  constellationShapeHint(c) {
+    if (!c) return '';
+    if (this.lang === 'zh') return c.shapeHint || '';
+    return c.shapeHintEn || c.shapeHint || '';
+  }
+
+  achievementName(ach) {
+    if (!ach) return '';
+    const keyMap = {
+      first_star: 'achFirstConstellation',
+      hunter: 'achHunter',
+      master: 'achMaster',
+      perfect: 'achPerfect',
+      lightning: 'achSpeed',
+      four_seasons: 'achSeasons',
+    };
+    const key = keyMap[ach.id];
+    if (key) return this.t(key);
+    return ach.name || '';
+  }
+
+  achievementDesc(ach) {
+    if (!ach) return '';
+    const keyMap = {
+      first_star: 'achFirstConstellationDesc',
+      hunter: 'achHunterDesc',
+      master: 'achMasterDesc',
+      perfect: 'achPerfectDesc',
+      lightning: 'achSpeedDesc',
+      four_seasons: 'achSeasonsDesc',
+    };
+    const key = keyMap[ach.id];
+    if (key) return this.t(key);
+    return ach.description || '';
   }
 }
 

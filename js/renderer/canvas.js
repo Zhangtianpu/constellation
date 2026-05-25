@@ -2,6 +2,7 @@ import { Star } from './star.js';
 import { ConstellationLine } from './line.js';
 import { ParticleSystem } from './particle.js';
 import { BackgroundRenderer } from './background.js';
+import { i18n } from '../utils/i18n.js';
 
 export class CanvasRenderer {
   constructor(canvas) {
@@ -70,13 +71,14 @@ export class CanvasRenderer {
     }
 
     for (const s of constellationData.stars) {
+      const starName = i18n.lang === 'zh' ? s.name : (s.nameEn || s.name);
       const star = new Star(
         s.x * areaW + offsetX,
         s.y * areaH + offsetY,
         s.x, s.y,
         true,
         s.magnitude,
-        s.name,
+        starName,
         s.id
       );
       this.stars.push(star);

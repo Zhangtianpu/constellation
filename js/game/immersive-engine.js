@@ -302,11 +302,11 @@ export class ImmersiveGameEngine {
 
   getHintText() {
     if (this.hintLevel === 1) {
-      return this.constellationData.directionHint || '旋转视角寻找星座';
+      return i18n.constellationHint(this.constellationData) || i18n.t('hintRotate');
     } else if (this.hintLevel === 2) {
-      return this.constellationData.shapeHint || '注意脉动的亮星';
+      return i18n.constellationShapeHint(this.constellationData) || i18n.t('hintShape');
     }
-    return '参考连线已显示，点击亮星完成连线';
+    return i18n.t('hintConnect3d');
   }
 
   checkCompletion() {

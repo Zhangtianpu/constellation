@@ -18,6 +18,7 @@
             {
               "id": 0,
               "name": "大角星",
+              "nameEn": "Arcturus",
               "x": 0.45,
               "y": 0.55,
               "magnitude": 1.0
@@ -25,6 +26,7 @@
             {
               "id": 1,
               "name": "ε星",
+              "nameEn": "Epsilon",
               "x": 0.38,
               "y": 0.38,
               "magnitude": 2.5
@@ -32,6 +34,7 @@
             {
               "id": 2,
               "name": "δ星",
+              "nameEn": "Delta",
               "x": 0.55,
               "y": 0.35,
               "magnitude": 3.0
@@ -39,6 +42,7 @@
             {
               "id": 3,
               "name": "γ星",
+              "nameEn": "Gamma",
               "x": 0.5,
               "y": 0.42,
               "magnitude": 3.0
@@ -46,6 +50,7 @@
             {
               "id": 4,
               "name": "ρ星",
+              "nameEn": "Rho",
               "x": 0.35,
               "y": 0.65,
               "magnitude": 3.5
@@ -53,6 +58,7 @@
             {
               "id": 5,
               "name": "η星",
+              "nameEn": "Eta",
               "x": 0.55,
               "y": 0.68,
               "magnitude": 3.5
@@ -98,7 +104,9 @@
             }
           ],
           "directionHint": "春夜高空偏东，寻找一颗明亮的橙色恒星——大角星",
+          "directionHintEn": "High in the eastern spring sky, look for a bright orange star — Arcturus",
           "shapeHint": "像一只风筝或冰淇淋蛋筒，大角星在最底端",
+          "shapeHintEn": "Like a kite or ice cream cone, with Arcturus at the bottom",
           "bounds": {
             "raMin": 200,
             "raMax": 225,
@@ -163,6 +171,7 @@
             {
               "id": 0,
               "name": "氐宿一",
+              "nameEn": "Zubenelgenubi",
               "x": 0.4,
               "y": 0.4,
               "magnitude": 2.7
@@ -170,6 +179,7 @@
             {
               "id": 1,
               "name": "氐宿四",
+              "nameEn": "Zubeneschamali",
               "x": 0.6,
               "y": 0.4,
               "magnitude": 2.6
@@ -177,6 +187,7 @@
             {
               "id": 2,
               "name": "氐宿三",
+              "nameEn": "Zubenelakrab",
               "x": 0.38,
               "y": 0.6,
               "magnitude": 3.5
@@ -184,6 +195,7 @@
             {
               "id": 3,
               "name": "氐宿增一",
+              "nameEn": "Zubenelakrabi",
               "x": 0.62,
               "y": 0.62,
               "magnitude": 3.9
@@ -225,7 +237,9 @@
             }
           ],
           "directionHint": "春夜南方天空，寻找一个菱形结构",
+          "directionHintEn": "In the southern spring sky, look for a diamond shape",
           "shapeHint": "像一个天平或菱形，四颗星构成简洁的形状",
+          "shapeHintEn": "Like a pair of scales or a diamond, four stars forming a simple shape",
           "bounds": {
             "raMin": 225,
             "raMax": 240,
@@ -276,6 +290,7 @@
             {
               "id": 0,
               "name": "角宿一",
+              "nameEn": "Spica",
               "x": 0.55,
               "y": 0.72,
               "magnitude": 1.0
@@ -283,6 +298,7 @@
             {
               "id": 1,
               "name": "ε星",
+              "nameEn": "Vindemiatrix",
               "x": 0.48,
               "y": 0.55,
               "magnitude": 2.8
@@ -290,6 +306,7 @@
             {
               "id": 2,
               "name": "δ星",
+              "nameEn": "Minelauva",
               "x": 0.4,
               "y": 0.45,
               "magnitude": 3.4
@@ -297,6 +314,7 @@
             {
               "id": 3,
               "name": "γ星",
+              "nameEn": "Porrima",
               "x": 0.5,
               "y": 0.38,
               "magnitude": 2.7
@@ -304,6 +322,7 @@
             {
               "id": 4,
               "name": "η星",
+              "nameEn": "Zaniah",
               "x": 0.58,
               "y": 0.42,
               "magnitude": 3.0
@@ -311,6 +330,7 @@
             {
               "id": 5,
               "name": "β星",
+              "nameEn": "Zavijava",
               "x": 0.35,
               "y": 0.58,
               "magnitude": 3.6
@@ -318,6 +338,7 @@
             {
               "id": 6,
               "name": "ζ星",
+              "nameEn": "Heze",
               "x": 0.62,
               "y": 0.55,
               "magnitude": 3.4
@@ -371,7 +392,9 @@
             }
           ],
           "directionHint": "春夜南方天空，寻找一颗蓝白色亮星——角宿一",
+          "directionHintEn": "In the southern spring sky, look for a bright blue-white star — Spica",
           "shapeHint": "像一个倾斜的Y形，角宿一在底部闪耀",
+          "shapeHintEn": "Like a tilted Y shape, with Spica shining at the bottom",
           "bounds": {
             "raMin": 190,
             "raMax": 225,
@@ -443,6 +466,7 @@
             {
               "id": 0,
               "name": "轩辕十四",
+              "nameEn": "Regulus",
               "x": 0.38,
               "y": 0.55,
               "magnitude": 1.4
@@ -450,6 +474,7 @@
             {
               "id": 1,
               "name": "五帝座一",
+              "nameEn": "Denebola",
               "x": 0.58,
               "y": 0.32,
               "magnitude": 2.1
@@ -457,6 +482,7 @@
             {
               "id": 2,
               "name": "轩辕十三",
+              "nameEn": "Algieba",
               "x": 0.32,
               "y": 0.45,
               "magnitude": 2.6
@@ -464,6 +490,7 @@
             {
               "id": 3,
               "name": "轩辕十二",
+              "nameEn": "Adhafera",
               "x": 0.28,
               "y": 0.35,
               "magnitude": 3.0
@@ -471,6 +498,7 @@
             {
               "id": 4,
               "name": "轩辕十一",
+              "nameEn": "Ras Elased",
               "x": 0.35,
               "y": 0.28,
               "magnitude": 3.2
@@ -478,6 +506,7 @@
             {
               "id": 5,
               "name": "西上相",
+              "nameEn": "Zosma",
               "x": 0.45,
               "y": 0.5,
               "magnitude": 2.6
@@ -485,6 +514,7 @@
             {
               "id": 6,
               "name": "西次相",
+              "nameEn": "Chertan",
               "x": 0.52,
               "y": 0.42,
               "magnitude": 2.9
@@ -492,6 +522,7 @@
             {
               "id": 7,
               "name": "太微右垣一",
+              "nameEn": "Subra",
               "x": 0.62,
               "y": 0.4,
               "magnitude": 3.3
@@ -545,7 +576,9 @@
             }
           ],
           "directionHint": "春夜南方高空，寻找一颗蓝白色亮星——轩辕十四",
+          "directionHintEn": "High in the southern spring sky, look for a bright blue-white star — Regulus",
           "shapeHint": "像一头蹲伏的狮子，轩辕十四是它的心脏，上方是反问号形的头部",
+          "shapeHintEn": "Like a crouching lion, Regulus is its heart, with a backward question mark above forming the head",
           "bounds": {
             "raMin": 145,
             "raMax": 180,
@@ -631,6 +664,7 @@
             {
               "id": 0,
               "name": "织女星",
+              "nameEn": "Vega",
               "x": 0.48,
               "y": 0.32,
               "magnitude": 0.0
@@ -638,6 +672,7 @@
             {
               "id": 1,
               "name": "ζ星",
+              "nameEn": "Zeta",
               "x": 0.42,
               "y": 0.48,
               "magnitude": 3.5
@@ -645,6 +680,7 @@
             {
               "id": 2,
               "name": "δ星",
+              "nameEn": "Delta",
               "x": 0.55,
               "y": 0.48,
               "magnitude": 3.5
@@ -652,6 +688,7 @@
             {
               "id": 3,
               "name": "β星",
+              "nameEn": "Sheliak",
               "x": 0.4,
               "y": 0.62,
               "magnitude": 3.3
@@ -659,6 +696,7 @@
             {
               "id": 4,
               "name": "γ星",
+              "nameEn": "Sulafat",
               "x": 0.57,
               "y": 0.62,
               "magnitude": 3.2
@@ -704,7 +742,9 @@
             }
           ],
           "directionHint": "夏夜头顶附近，寻找一颗非常明亮的蓝白色恒星——织女星",
+          "directionHintEn": "Near overhead in summer, look for a very bright blue-white star — Vega",
           "shapeHint": "织女星旁边有一个小平行四边形，像一把小竖琴",
+          "shapeHintEn": "A small parallelogram next to Vega, shaped like a tiny harp",
           "bounds": {
             "raMin": 280,
             "raMax": 295,
@@ -762,6 +802,7 @@
             {
               "id": 0,
               "name": "牛郎星",
+              "nameEn": "Altair",
               "x": 0.48,
               "y": 0.45,
               "magnitude": 0.8
@@ -769,6 +810,7 @@
             {
               "id": 1,
               "name": "β星",
+              "nameEn": "Tarazed",
               "x": 0.4,
               "y": 0.38,
               "magnitude": 3.0
@@ -776,6 +818,7 @@
             {
               "id": 2,
               "name": "γ星",
+              "nameEn": "Alshain",
               "x": 0.56,
               "y": 0.38,
               "magnitude": 2.7
@@ -783,6 +826,7 @@
             {
               "id": 3,
               "name": "δ星",
+              "nameEn": "Delta",
               "x": 0.45,
               "y": 0.6,
               "magnitude": 3.5
@@ -790,6 +834,7 @@
             {
               "id": 4,
               "name": "ζ星",
+              "nameEn": "Zeta",
               "x": 0.52,
               "y": 0.62,
               "magnitude": 3.8
@@ -831,7 +876,9 @@
             }
           ],
           "directionHint": "夏夜银河附近，寻找一颗白色亮星——牛郎星",
+          "directionHintEn": "Near the Milky Way in summer, look for a bright white star — Altair",
           "shapeHint": "牛郎星两侧各有一颗小星，像一条横线，传说中是牛郎挑着两个孩子",
+          "shapeHintEn": "Altair flanked by two smaller stars on each side, like a horizontal line",
           "bounds": {
             "raMin": 295,
             "raMax": 310,
@@ -889,6 +936,7 @@
             {
               "id": 0,
               "name": "天津四",
+              "nameEn": "Deneb",
               "x": 0.5,
               "y": 0.25,
               "magnitude": 1.3
@@ -896,6 +944,7 @@
             {
               "id": 1,
               "name": "Sadr",
+              "nameEn": "Sadr",
               "x": 0.5,
               "y": 0.45,
               "magnitude": 2.2
@@ -903,6 +952,7 @@
             {
               "id": 2,
               "name": "ε星",
+              "nameEn": "Gienah",
               "x": 0.35,
               "y": 0.42,
               "magnitude": 2.5
@@ -910,6 +960,7 @@
             {
               "id": 3,
               "name": "δ星",
+              "nameEn": "Delta",
               "x": 0.65,
               "y": 0.42,
               "magnitude": 2.9
@@ -917,6 +968,7 @@
             {
               "id": 4,
               "name": "Albireo",
+              "nameEn": "Albireo",
               "x": 0.5,
               "y": 0.7,
               "magnitude": 3.1
@@ -924,6 +976,7 @@
             {
               "id": 5,
               "name": "η星",
+              "nameEn": "Eta",
               "x": 0.38,
               "y": 0.32,
               "magnitude": 3.9
@@ -931,6 +984,7 @@
             {
               "id": 6,
               "name": "ζ星",
+              "nameEn": "Zeta",
               "x": 0.62,
               "y": 0.32,
               "magnitude": 3.2
@@ -980,7 +1034,9 @@
             }
           ],
           "directionHint": "夏夜头顶银河中，寻找一个十字形——天津四是十字的顶端",
+          "directionHintEn": "Overhead in the summer Milky Way, look for a cross shape — Deneb is at the top",
           "shapeHint": "像一个展翅飞翔的天鹅，也像一个十字架，天津四是尾巴",
+          "shapeHintEn": "Like a swan spreading its wings, or a cross, with Deneb at the tail",
           "bounds": {
             "raMin": 295,
             "raMax": 315,
@@ -1052,6 +1108,7 @@
             {
               "id": 0,
               "name": "心宿二",
+              "nameEn": "Antares",
               "x": 0.45,
               "y": 0.35,
               "magnitude": 1.0
@@ -1059,6 +1116,7 @@
             {
               "id": 1,
               "name": "σ星",
+              "nameEn": "Sigma",
               "x": 0.42,
               "y": 0.25,
               "magnitude": 2.9
@@ -1066,6 +1124,7 @@
             {
               "id": 2,
               "name": "β星",
+              "nameEn": "Acrab",
               "x": 0.38,
               "y": 0.18,
               "magnitude": 2.6
@@ -1073,6 +1132,7 @@
             {
               "id": 3,
               "name": "δ星",
+              "nameEn": "Dschubba",
               "x": 0.48,
               "y": 0.28,
               "magnitude": 2.3
@@ -1080,6 +1140,7 @@
             {
               "id": 4,
               "name": "τ星",
+              "nameEn": "Tau",
               "x": 0.5,
               "y": 0.45,
               "magnitude": 2.8
@@ -1087,6 +1148,7 @@
             {
               "id": 5,
               "name": "ε星",
+              "nameEn": "Epsilon",
               "x": 0.55,
               "y": 0.52,
               "magnitude": 2.3
@@ -1094,6 +1156,7 @@
             {
               "id": 6,
               "name": "ζ星",
+              "nameEn": "Zeta",
               "x": 0.58,
               "y": 0.6,
               "magnitude": 2.6
@@ -1101,6 +1164,7 @@
             {
               "id": 7,
               "name": "η星",
+              "nameEn": "Eta",
               "x": 0.62,
               "y": 0.68,
               "magnitude": 3.3
@@ -1108,6 +1172,7 @@
             {
               "id": 8,
               "name": "θ星",
+              "nameEn": "Sargas",
               "x": 0.58,
               "y": 0.75,
               "magnitude": 1.9
@@ -1115,6 +1180,7 @@
             {
               "id": 9,
               "name": "ι星",
+              "nameEn": "Iota",
               "x": 0.52,
               "y": 0.8,
               "magnitude": 3.0
@@ -1181,7 +1247,9 @@
             }
           ],
           "directionHint": "夏夜南方低空，寻找一颗红色亮星——心宿二，它在银河附近",
+          "directionHintEn": "Low in the southern summer sky, look for a bright red star — Antares, near the Milky Way",
           "shapeHint": "像一只翘起尾巴的蝎子，心宿二是蝎子的心脏，发出红光",
+          "shapeHintEn": "Like a scorpion with a curved tail, Antares is the heart glowing red",
           "bounds": {
             "raMin": 240,
             "raMax": 265,
@@ -1281,6 +1349,7 @@
             {
               "id": 0,
               "name": "王良一",
+              "nameEn": "Schedar",
               "x": 0.3,
               "y": 0.45,
               "magnitude": 2.2
@@ -1288,6 +1357,7 @@
             {
               "id": 1,
               "name": "王良四",
+              "nameEn": "Caph",
               "x": 0.4,
               "y": 0.35,
               "magnitude": 2.3
@@ -1295,6 +1365,7 @@
             {
               "id": 2,
               "name": "策",
+              "nameEn": "Gamma",
               "x": 0.5,
               "y": 0.5,
               "magnitude": 2.5
@@ -1302,6 +1373,7 @@
             {
               "id": 3,
               "name": "阁道二",
+              "nameEn": "Ruchbah",
               "x": 0.6,
               "y": 0.35,
               "magnitude": 2.7
@@ -1309,6 +1381,7 @@
             {
               "id": 4,
               "name": "阁道三",
+              "nameEn": "Segin",
               "x": 0.7,
               "y": 0.48,
               "magnitude": 3.4
@@ -1350,7 +1423,9 @@
             }
           ],
           "directionHint": "秋夜北方天空，寻找一个W或M形——它终年可见",
+          "directionHintEn": "In the northern autumn sky, look for a W or M shape — visible year-round",
           "shapeHint": "像一个巨大的W或M，五颗亮星组成独特的折线形",
+          "shapeHintEn": "Like a giant W or M, five bright stars forming a distinctive zigzag",
           "bounds": {
             "raMin": 5,
             "raMax": 30,
@@ -1408,6 +1483,7 @@
             {
               "id": 0,
               "name": "室宿一",
+              "nameEn": "Markab",
               "x": 0.38,
               "y": 0.38,
               "magnitude": 2.5
@@ -1415,6 +1491,7 @@
             {
               "id": 1,
               "name": "室宿二",
+              "nameEn": "Scheat",
               "x": 0.58,
               "y": 0.35,
               "magnitude": 2.4
@@ -1422,6 +1499,7 @@
             {
               "id": 2,
               "name": "壁宿一",
+              "nameEn": "Algenib",
               "x": 0.6,
               "y": 0.55,
               "magnitude": 2.8
@@ -1429,6 +1507,7 @@
             {
               "id": 3,
               "name": "壁宿二",
+              "nameEn": "Alpheratz",
               "x": 0.4,
               "y": 0.58,
               "magnitude": 2.8
@@ -1436,6 +1515,7 @@
             {
               "id": 4,
               "name": "ε星",
+              "nameEn": "Enif",
               "x": 0.72,
               "y": 0.3,
               "magnitude": 2.4
@@ -1443,6 +1523,7 @@
             {
               "id": 5,
               "name": "η星",
+              "nameEn": "Matar",
               "x": 0.3,
               "y": 0.42,
               "magnitude": 3.0
@@ -1450,6 +1531,7 @@
             {
               "id": 6,
               "name": "μ星",
+              "nameEn": "Sadalsuud",
               "x": 0.68,
               "y": 0.62,
               "magnitude": 3.5
@@ -1503,7 +1585,9 @@
             }
           ],
           "directionHint": "秋夜高空，寻找一个巨大的正方形——秋季四边形",
+          "directionHintEn": "High in the autumn sky, look for a giant square — the Great Square",
           "shapeHint": "四颗亮星组成一个大正方形，是秋夜最显著的标志",
+          "shapeHintEn": "Four bright stars forming a large square, the most prominent feature of autumn nights",
           "bounds": {
             "raMin": 325,
             "raMax": 355,
@@ -1575,6 +1659,7 @@
             {
               "id": 0,
               "name": "壁宿二",
+              "nameEn": "Alpheratz",
               "x": 0.35,
               "y": 0.5,
               "magnitude": 2.1
@@ -1582,6 +1667,7 @@
             {
               "id": 1,
               "name": "奎宿九",
+              "nameEn": "Mirach",
               "x": 0.45,
               "y": 0.42,
               "magnitude": 2.1
@@ -1589,6 +1675,7 @@
             {
               "id": 2,
               "name": "天大将军一",
+              "nameEn": "Almach",
               "x": 0.55,
               "y": 0.35,
               "magnitude": 2.3
@@ -1596,6 +1683,7 @@
             {
               "id": 3,
               "name": "δ星",
+              "nameEn": "Delta",
               "x": 0.4,
               "y": 0.58,
               "magnitude": 3.3
@@ -1603,6 +1691,7 @@
             {
               "id": 4,
               "name": "π星",
+              "nameEn": "Pi",
               "x": 0.5,
               "y": 0.52,
               "magnitude": 3.6
@@ -1610,6 +1699,7 @@
             {
               "id": 5,
               "name": "μ星",
+              "nameEn": "Mu",
               "x": 0.6,
               "y": 0.45,
               "magnitude": 3.9
@@ -1617,6 +1707,7 @@
             {
               "id": 6,
               "name": "ν星",
+              "nameEn": "Nu",
               "x": 0.62,
               "y": 0.28,
               "magnitude": 4.0
@@ -1666,7 +1757,9 @@
             }
           ],
           "directionHint": "秋夜高空飞马座旁边，沿着飞马座的一角向东北延伸",
+          "directionHintEn": "High in the autumn sky next to Pegasus, extending northeast from one corner",
           "shapeHint": "像一条弯曲的线，从飞马座延伸出来，仙女座星系就在其中",
+          "shapeHintEn": "Like a curved line extending from Pegasus, the Andromeda Galaxy lies within",
           "bounds": {
             "raMin": 335,
             "raMax": 355,
@@ -1738,6 +1831,7 @@
             {
               "id": 0,
               "name": "天船三",
+              "nameEn": "Mirfak",
               "x": 0.45,
               "y": 0.28,
               "magnitude": 1.8
@@ -1745,6 +1839,7 @@
             {
               "id": 1,
               "name": "大陵五",
+              "nameEn": "Algol",
               "x": 0.35,
               "y": 0.4,
               "magnitude": 2.1
@@ -1752,6 +1847,7 @@
             {
               "id": 2,
               "name": "ζ星",
+              "nameEn": "Zeta",
               "x": 0.5,
               "y": 0.42,
               "magnitude": 2.9
@@ -1759,6 +1855,7 @@
             {
               "id": 3,
               "name": "ε星",
+              "nameEn": "Epsilon",
               "x": 0.55,
               "y": 0.52,
               "magnitude": 2.9
@@ -1766,6 +1863,7 @@
             {
               "id": 4,
               "name": "δ星",
+              "nameEn": "Delta",
               "x": 0.48,
               "y": 0.6,
               "magnitude": 3.0
@@ -1773,6 +1871,7 @@
             {
               "id": 5,
               "name": "κ星",
+              "nameEn": "Kappa",
               "x": 0.38,
               "y": 0.55,
               "magnitude": 3.8
@@ -1780,6 +1879,7 @@
             {
               "id": 6,
               "name": "ν星",
+              "nameEn": "Nu",
               "x": 0.58,
               "y": 0.35,
               "magnitude": 3.8
@@ -1829,7 +1929,9 @@
             }
           ],
           "directionHint": "秋夜东北天空，仙女座东北方，寻找一颗明亮的变星——大陵五",
+          "directionHintEn": "In the northeastern autumn sky, northeast of Andromeda, look for a bright variable star — Algol",
           "shapeHint": "像一个弯曲的Y形，大陵五是其中最亮的星，会周期性变暗",
+          "shapeHintEn": "Like a curved Y shape, Algol is the brightest star, periodically dimming",
           "bounds": {
             "raMin": 45,
             "raMax": 60,
@@ -1908,6 +2010,7 @@
             {
               "id": 0,
               "name": "毕宿五",
+              "nameEn": "Aldebaran",
               "x": 0.5,
               "y": 0.52,
               "magnitude": 0.9
@@ -1915,6 +2018,7 @@
             {
               "id": 1,
               "name": "ε星",
+              "nameEn": "Ain",
               "x": 0.42,
               "y": 0.42,
               "magnitude": 3.5
@@ -1922,6 +2026,7 @@
             {
               "id": 2,
               "name": "δ星",
+              "nameEn": "Delta",
               "x": 0.55,
               "y": 0.45,
               "magnitude": 3.8
@@ -1929,6 +2034,7 @@
             {
               "id": 3,
               "name": "γ星",
+              "nameEn": "Gamma",
               "x": 0.48,
               "y": 0.4,
               "magnitude": 3.7
@@ -1936,6 +2042,7 @@
             {
               "id": 4,
               "name": "β星",
+              "nameEn": "Elnath",
               "x": 0.38,
               "y": 0.3,
               "magnitude": 1.7
@@ -1943,6 +2050,7 @@
             {
               "id": 5,
               "name": "ζ星",
+              "nameEn": "Zeta",
               "x": 0.62,
               "y": 0.35,
               "magnitude": 3.0
@@ -1950,6 +2058,7 @@
             {
               "id": 6,
               "name": "η星",
+              "nameEn": "Eta",
               "x": 0.58,
               "y": 0.62,
               "magnitude": 3.5
@@ -1999,7 +2108,9 @@
             }
           ],
           "directionHint": "冬夜南方天空，寻找一颗橙红色亮星——毕宿五",
+          "directionHintEn": "In the southern winter sky, look for a bright orange-red star — Aldebaran",
           "shapeHint": "毕宿五是金牛的眼睛，旁边V形是牛脸，上方有昴星团小星团",
+          "shapeHintEn": "Aldebaran is the Bull's eye, a V-shape nearby forms the face, with the Pleiades cluster above",
           "bounds": {
             "raMin": 55,
             "raMax": 85,
@@ -2071,6 +2182,7 @@
             {
               "id": 0,
               "name": "参宿四",
+              "nameEn": "Betelgeuse",
               "x": 0.38,
               "y": 0.25,
               "magnitude": 0.5
@@ -2078,6 +2190,7 @@
             {
               "id": 1,
               "name": "参宿七",
+              "nameEn": "Rigel",
               "x": 0.6,
               "y": 0.72,
               "magnitude": 0.1
@@ -2085,6 +2198,7 @@
             {
               "id": 2,
               "name": "参宿一",
+              "nameEn": "Mintaka",
               "x": 0.5,
               "y": 0.45,
               "magnitude": 1.7
@@ -2092,6 +2206,7 @@
             {
               "id": 3,
               "name": "参宿二",
+              "nameEn": "Alnilam",
               "x": 0.48,
               "y": 0.5,
               "magnitude": 1.7
@@ -2099,6 +2214,7 @@
             {
               "id": 4,
               "name": "参宿三",
+              "nameEn": "Alnitak",
               "x": 0.46,
               "y": 0.55,
               "magnitude": 2.2
@@ -2106,6 +2222,7 @@
             {
               "id": 5,
               "name": "参宿五",
+              "nameEn": "Bellatrix",
               "x": 0.58,
               "y": 0.28,
               "magnitude": 1.6
@@ -2113,6 +2230,7 @@
             {
               "id": 6,
               "name": "参宿六",
+              "nameEn": "Saiph",
               "x": 0.4,
               "y": 0.7,
               "magnitude": 2.1
@@ -2120,6 +2238,7 @@
             {
               "id": 7,
               "name": "λ星",
+              "nameEn": "Meissa",
               "x": 0.42,
               "y": 0.38,
               "magnitude": 3.5
@@ -2127,6 +2246,7 @@
             {
               "id": 8,
               "name": "κ星",
+              "nameEn": "Kappa",
               "x": 0.56,
               "y": 0.6,
               "magnitude": 2.1
@@ -2184,7 +2304,9 @@
             }
           ],
           "directionHint": "冬夜南方天空，寻找三颗排成一线的星星——猎户腰带",
+          "directionHintEn": "In the southern winter sky, look for three stars in a row — Orion's Belt",
           "shapeHint": "三颗星排成一线是腰带，上方橙红色是参宿四，下方蓝白色是参宿七",
+          "shapeHintEn": "Three stars in a row form the belt, orange-red Betelgeuse above, blue-white Rigel below",
           "bounds": {
             "raMin": 75,
             "raMax": 90,
@@ -2270,6 +2392,7 @@
             {
               "id": 0,
               "name": "北河二",
+              "nameEn": "Castor",
               "x": 0.42,
               "y": 0.22,
               "magnitude": 1.6
@@ -2277,6 +2400,7 @@
             {
               "id": 1,
               "name": "北河三",
+              "nameEn": "Pollux",
               "x": 0.55,
               "y": 0.25,
               "magnitude": 1.2
@@ -2284,6 +2408,7 @@
             {
               "id": 2,
               "name": "δ星",
+              "nameEn": "Wasat",
               "x": 0.4,
               "y": 0.38,
               "magnitude": 3.5
@@ -2291,6 +2416,7 @@
             {
               "id": 3,
               "name": "μ星",
+              "nameEn": "Tejat",
               "x": 0.57,
               "y": 0.4,
               "magnitude": 2.9
@@ -2298,6 +2424,7 @@
             {
               "id": 4,
               "name": "ζ星",
+              "nameEn": "Mekbuda",
               "x": 0.38,
               "y": 0.52,
               "magnitude": 3.4
@@ -2305,6 +2432,7 @@
             {
               "id": 5,
               "name": "η星",
+              "nameEn": "Propus",
               "x": 0.58,
               "y": 0.55,
               "magnitude": 3.3
@@ -2312,6 +2440,7 @@
             {
               "id": 6,
               "name": "λ星",
+              "nameEn": "Alhena",
               "x": 0.35,
               "y": 0.65,
               "magnitude": 3.6
@@ -2319,6 +2448,7 @@
             {
               "id": 7,
               "name": "ξ星",
+              "nameEn": "Xi",
               "x": 0.6,
               "y": 0.68,
               "magnitude": 3.4
@@ -2372,7 +2502,9 @@
             }
           ],
           "directionHint": "冬夜猎户座东北方，寻找两颗靠得很近的亮星——北河二和北河三",
+          "directionHintEn": "Northeast of Orion in winter, look for two close bright stars — Castor and Pollux",
           "shapeHint": "两颗亮星像一对双胞胎的头，下方各有几颗星延伸出身体",
+          "shapeHintEn": "Two bright stars like the heads of twins, with stars extending below forming their bodies",
           "bounds": {
             "raMin": 95,
             "raMax": 115,
@@ -2451,6 +2583,7 @@
             {
               "id": 0,
               "name": "天狼星",
+              "nameEn": "Sirius",
               "x": 0.45,
               "y": 0.35,
               "magnitude": -1.5
@@ -2458,6 +2591,7 @@
             {
               "id": 1,
               "name": "弧矢一",
+              "nameEn": "Wezen",
               "x": 0.55,
               "y": 0.45,
               "magnitude": 1.8
@@ -2465,6 +2599,7 @@
             {
               "id": 2,
               "name": "弧矢七",
+              "nameEn": "Aludra",
               "x": 0.5,
               "y": 0.55,
               "magnitude": 2.0
@@ -2472,6 +2607,7 @@
             {
               "id": 3,
               "name": "δ星",
+              "nameEn": "Furud",
               "x": 0.38,
               "y": 0.5,
               "magnitude": 1.8
@@ -2479,6 +2615,7 @@
             {
               "id": 4,
               "name": "η星",
+              "nameEn": "Eta",
               "x": 0.42,
               "y": 0.65,
               "magnitude": 2.4
@@ -2486,6 +2623,7 @@
             {
               "id": 5,
               "name": "ε星",
+              "nameEn": "Adhara",
               "x": 0.58,
               "y": 0.6,
               "magnitude": 1.5
@@ -2493,6 +2631,7 @@
             {
               "id": 6,
               "name": "β星",
+              "nameEn": "Mirzam",
               "x": 0.35,
               "y": 0.38,
               "magnitude": 2.9
@@ -2546,7 +2685,9 @@
             }
           ],
           "directionHint": "冬夜猎户座东南方，寻找全天最亮的恒星——天狼星",
+          "directionHintEn": "Southeast of Orion in winter, look for the brightest star in the night sky — Sirius",
           "shapeHint": "天狼星极其明亮，下方几颗星构成大犬的身体",
+          "shapeHintEn": "Sirius is extremely bright, with a few stars below forming the Great Dog's body",
           "bounds": {
             "raMin": 95,
             "raMax": 110,
