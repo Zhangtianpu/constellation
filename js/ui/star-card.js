@@ -24,10 +24,10 @@ export class StarCard {
     const info = document.createElement('div');
     info.className = 'star-card-info';
     info.innerHTML = `
-      <h2 class="star-card-name">${constellationData.name}</h2>
+      <h2 class="star-card-name">${i18n.constellationName(constellationData)}</h2>
       <p class="star-card-name-en">${constellationData.nameEn}</p>
       <p class="star-card-season">${i18n.t('bestViewing')}${seasonName}</p>
-      <p class="star-card-story">${constellationData.story}</p>
+      <p class="star-card-story">${i18n.constellationStory(constellationData)}</p>
     `;
     inner.appendChild(info);
 

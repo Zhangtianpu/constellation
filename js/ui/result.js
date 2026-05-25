@@ -32,7 +32,7 @@ export class ResultPage {
     const title = document.createElement('div');
     title.className = 'result-title';
     title.innerHTML = `
-      <div class="result-constellation-name">${constellation.name}</div>
+      <div class="result-constellation-name">${i18n.constellationName(constellation)}</div>
       <div class="result-constellation-en">${constellation.nameEn}</div>
     `;
     card.appendChild(title);
@@ -66,7 +66,7 @@ export class ResultPage {
 
     const storyEl = document.createElement('div');
     storyEl.className = 'result-story glass-panel';
-    storyEl.innerHTML = `<h3>📖 ${i18n.t('constellationStory')}</h3><p>${constellation.story}</p>`;
+    storyEl.innerHTML = `<h3>📖 ${i18n.t('constellationStory')}</h3><p>${i18n.constellationStory(constellation)}</p>`;
     card.appendChild(storyEl);
 
     if (result.newAchievements && result.newAchievements.length > 0) {

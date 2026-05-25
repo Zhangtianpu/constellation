@@ -131,6 +131,27 @@ class I18n {
     const map = { easy: 'easy', medium: 'medium', hard: 'hard' };
     return this.t(map[diff] || diff);
   }
+
+  constellationName(c) {
+    if (!c) return '';
+    return this.lang === 'zh' ? c.name : (c.nameEn || c.name);
+  }
+
+  constellationDesc(c) {
+    if (!c) return '';
+    return this.lang === 'zh' ? c.description : (c.descriptionEn || c.description);
+  }
+
+  constellationStory(c) {
+    if (!c) return '';
+    return this.lang === 'zh' ? c.story : (c.storyEn || c.story);
+  }
+
+  constellationHint(c) {
+    if (!c) return '';
+    if (this.lang === 'zh') return c.directionHint || c.description;
+    return c.directionHintEn || c.descriptionEn || c.directionHint || c.description;
+  }
 }
 
 export const i18n = new I18n();

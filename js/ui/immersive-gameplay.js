@@ -61,7 +61,7 @@ export class ImmersiveGameplayPage {
 
     const nameEl = document.createElement('div');
     nameEl.className = 'game-constellation-info';
-    nameEl.innerHTML = `<span class="name-cn">${constellation.name}</span><span class="name-en">${constellation.nameEn}</span><span class="name-sep">·</span><span class="name-desc">${constellation.directionHint || constellation.description}</span>`;
+    nameEl.innerHTML = `<span class="name-cn">${i18n.constellationName(constellation)}</span><span class="name-en">${constellation.nameEn}</span><span class="name-sep">·</span><span class="name-desc">${i18n.constellationHint(constellation)}</span>`;
     topBar.appendChild(nameEl);
 
     const timerEl = document.createElement('div');

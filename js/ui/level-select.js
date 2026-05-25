@@ -82,7 +82,7 @@ export class LevelSelectPage {
       seasonHeader.className = 'season-header';
       seasonHeader.innerHTML = `
         <span class="season-icon">${season.icon}</span>
-        <span class="season-name">${season.name}</span>
+        <span class="season-name">${i18n.getSeasonName(seasonIdx)}</span>
       `;
       seasonCard.appendChild(seasonHeader);
 
@@ -101,7 +101,7 @@ export class LevelSelectPage {
 
         card.innerHTML = `
           <div class="card-icon">${isUnlocked ? (isCompleted ? '⭐' : '✦') : '🔒'}</div>
-          <div class="card-name">${isUnlocked ? constellation.name : '???'}</div>
+          <div class="card-name">${isUnlocked ? i18n.constellationName(constellation) : '???'}</div>
           <div class="card-difficulty">${isUnlocked ? diffLabel : ''}</div>
           <div class="card-stars">${isCompleted ? '★'.repeat(stars) + '☆'.repeat(3 - stars) : ''}</div>
         `;
