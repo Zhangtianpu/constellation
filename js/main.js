@@ -4,6 +4,11 @@ import { LevelSelectPage } from './ui/level-select.js';
 import { GameplayPage } from './ui/gameplay.js';
 import { ImmersiveGameplayPage } from './ui/immersive-gameplay.js';
 import { ResultPage } from './ui/result.js';
+import { AboutPage } from './ui/about.js';
+import { HowToPlayPage } from './ui/how-to-play.js';
+import { PrivacyPage } from './ui/privacy.js';
+import { TermsPage } from './ui/terms.js';
+import { ConstellationGuidePage } from './ui/constellation-guide.js';
 
 const app = document.getElementById('app');
 
@@ -16,6 +21,11 @@ const pageMap = {
   gameplay: GameplayPage,
   immersiveGameplay: ImmersiveGameplayPage,
   result: ResultPage,
+  about: AboutPage,
+  howToPlay: HowToPlayPage,
+  privacy: PrivacyPage,
+  terms: TermsPage,
+  constellationGuide: ConstellationGuidePage,
 };
 
 function renderPage(state, prev) {

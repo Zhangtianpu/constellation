@@ -141,6 +141,12 @@ export class ResultPage {
 
     card.appendChild(buttons);
     page.appendChild(card);
+
+    const adContainer = document.createElement('div');
+    adContainer.className = 'ad-container';
+    adContainer.innerHTML = '<ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-2532162099328025" data-ad-slot="XXXXXXXXXX" data-ad-format="auto" data-full-width-responsive="true"></ins>';
+    page.appendChild(adContainer);
+
     this.container.appendChild(page);
   }
 

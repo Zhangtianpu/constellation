@@ -22,10 +22,14 @@ export class HomePage {
 
     const page = document.createElement('div');
     page.className = 'page home-page';
+    page.style.overflowY = 'auto';
+
+    const topSection = document.createElement('div');
+    topSection.className = 'home-top-section';
 
     const starsDecoration = document.createElement('div');
     starsDecoration.className = 'home-stars-decoration';
-    page.appendChild(starsDecoration);
+    topSection.appendChild(starsDecoration);
 
     const langBtn = document.createElement('button');
     langBtn.className = 'lang-toggle-btn';
@@ -33,7 +37,7 @@ export class HomePage {
     langBtn.addEventListener('click', () => {
       i18n.toggleLang();
     });
-    page.appendChild(langBtn);
+    topSection.appendChild(langBtn);
 
     const title = document.createElement('div');
     title.className = 'home-title';
@@ -43,12 +47,12 @@ export class HomePage {
       <p class="subtitle">Starlight Constellation</p>
       <div class="title-star">✦</div>
     `;
-    page.appendChild(title);
+    topSection.appendChild(title);
 
     const desc = document.createElement('p');
     desc.className = 'home-desc';
     desc.textContent = i18n.t('appDesc');
-    page.appendChild(desc);
+    topSection.appendChild(desc);
 
     const buttons = document.createElement('div');
     buttons.className = 'home-buttons';
@@ -87,11 +91,119 @@ export class HomePage {
     });
     buttons.appendChild(soundBtn);
 
-    page.appendChild(buttons);
+    topSection.appendChild(buttons);
+    page.appendChild(topSection);
 
-    const footer = document.createElement('div');
-    footer.className = 'home-footer';
-    footer.innerHTML = `<p>${i18n.t('homeSubtitle')}</p>`;
+    const scrollContent = document.createElement('div');
+    scrollContent.className = 'home-scroll-content';
+
+    const exploreSection = document.createElement('section');
+    exploreSection.className = 'home-explore';
+    exploreSection.innerHTML = `
+      <h2 class="section-title">${i18n.t('exploreSky')}</h2>
+      <p class="section-desc">${i18n.t('exploreSkyDesc')}</p>
+    `;
+    scrollContent.appendChild(exploreSection);
+
+    const featuresSection = document.createElement('section');
+    featuresSection.className = 'home-features';
+    featuresSection.innerHTML = `
+      <h2 class="section-title">${i18n.t('features')}</h2>
+      <div class="features-grid">
+        <div class="feature-card glass-panel">
+          <div class="feature-icon">🌟</div>
+          <h3>${i18n.t('featureClassic')}</h3>
+          <p>${i18n.t('featureClassicDesc')}</p>
+        </div>
+        <div class="feature-card glass-panel">
+          <div class="feature-icon">🌌</div>
+          <h3>${i18n.t('featureImmersive')}</h3>
+          <p>${i18n.t('featureImmersiveDesc')}</p>
+        </div>
+        <div class="feature-card glass-panel">
+          <div class="feature-icon">📖</div>
+          <h3>${i18n.t('featureStories')}</h3>
+          <p>${i18n.t('featureStoriesDesc')}</p>
+        </div>
+        <div class="feature-card glass-panel">
+          <div class="feature-icon">🏆</div>
+          <h3>${i18n.t('featureAchievements')}</h3>
+          <p>${i18n.t('featureAchievementsDesc')}</p>
+        </div>
+      </div>
+    `;
+    scrollContent.appendChild(featuresSection);
+
+    const constSection = document.createElement('section');
+    constSection.className = 'home-constellations';
+    let constCardsHTML = '';
+    const data = this.store.getState().constellationData;
+    if (data) {
+      for (const season of data.seasons) {
+        for (const c of season.constellations) {
+          constCardsHTML += `
+            <div class="const-preview-card">
+              <span class="const-preview-icon">${season.icon}</span>
+              <span class="const-preview-name">${i18n.constellationName(c)}</span>
+              <span class="const-preview-en">${c.nameEn}</span>
+            </div>
+          `;
+        }
+      }
+    }
+    constSection.innerHTML = `
+      <h2 class="section-title">${i18n.t('availableConstellations')}</h2>
+      <div class="const-preview-grid">${constCardsHTML}</div>
+    `;
+    scrollContent.appendChild(constSection);
+
+    const adContainer = document.createElement('div');
+    adContainer.className = 'ad-container';
+    adContainer.innerHTML = '<ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-2532162099328025" data-ad-slot="XXXXXXXXXX" data-ad-format="auto" data-full-width-responsive="true"></ins>';
+    scrollContent.appendChild(adContainer);
+
+    page.appendChild(scrollContent);
+
+    const footer = document.createElement('footer');
+    footer.className = 'main-footer';
+    footer.innerHTML = `
+      <div class="footer-content">
+        <div class="footer-section">
+          <h3>Starlight Constellation</h3>
+          <p>${i18n.t('appDesc')}</p>
+        </div>
+        <div class="footer-section">
+          <h3>${i18n.t('footerQuickLinks')}</h3>
+          <ul>
+            <li><a href="#" data-page="about">${i18n.t('about')}</a></li>
+            <li><a href="#" data-page="howToPlay">${i18n.t('howToPlay')}</a></li>
+            <li><a href="#" data-page="constellationGuide">${i18n.t('constellationGuide')}</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h3>${i18n.t('footerLegal')}</h3>
+          <ul>
+            <li><a href="#" data-page="privacy">${i18n.t('privacy')}</a></li>
+            <li><a href="#" data-page="terms">${i18n.t('terms')}</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h3>${i18n.t('contact')}</h3>
+          <p>${i18n.t('contactEmail')}</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>${i18n.t('footerCopyright')}</p>
+      </div>
+    `;
+
+    footer.querySelectorAll('a[data-page]').forEach(link => {
+      link.addEventListener('click', (e) => {
+        e.preventDefault();
+        this.store.navigate(link.dataset.page);
+      });
+    });
+
     page.appendChild(footer);
 
     this.container.appendChild(page);
