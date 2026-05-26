@@ -96,7 +96,7 @@ new PrerenderSPAPlugin({
     "bestRating": "5",
     "worstRating": "1"
   },
-  "screenshot": "https://constellation.sidehustle.top/images/screenshot-1.png",
+  "screenshot": "https://sidehustle.top/images/screenshot-1.png",
   "featureList": [
     "Interactive constellation connection game",
     "3D immersive star-gazing experience",
@@ -131,13 +131,13 @@ new PrerenderSPAPlugin({
 
 ```html
 <!-- Open Graph Image -->
-<meta property="og:image" content="https://constellation.sidehustle.top/images/og-image.png">
+<meta property="og:image" content="https://sidehustle.top/images/og-image.png">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <meta property="og:image:alt" content="Starlight Constellation - Interactive Star Connection Game">
 
 <!-- Twitter Image -->
-<meta name="twitter:image" content="https://constellation.sidehustle.top/images/twitter-card.png">
+<meta name="twitter:image" content="https://sidehustle.top/images/twitter-card.png">
 ```
 
 **创建预览图设计要求**：
@@ -252,9 +252,9 @@ new PrerenderSPAPlugin({
 
 ```html
 <!-- 添加 hreflang 标签 -->
-<link rel="alternate" hreflang="en" href="https://constellation.sidehustle.top/?lang=en">
-<link rel="alternate" hreflang="zh" href="https://constellation.sidehustle.top/?lang=zh">
-<link rel="alternate" hreflang="x-default" href="https://constellation.sidehustle.top/">
+<link rel="alternate" hreflang="en" href="https://sidehustle.top/?lang=en">
+<link rel="alternate" hreflang="zh" href="https://sidehustle.top/?lang=zh">
+<link rel="alternate" hreflang="x-default" href="https://sidehustle.top/">
 ```
 
 ---

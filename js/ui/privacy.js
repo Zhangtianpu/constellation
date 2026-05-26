@@ -32,7 +32,7 @@ export class PrivacyPage {
     content.innerHTML = `
       <section class="info-section">
         <h2>Introduction</h2>
-        <p>Starlight Constellation ("we", "our", or "us") is committed to protecting your privacy. This Privacy Policy explains how we collect, use, and safeguard your information when you visit our website at constellation.sidehustle.top.</p>
+        <p>Starlight Constellation ("we", "our", or "us") is committed to protecting your privacy. This Privacy Policy explains how we collect, use, and safeguard your information when you visit our website at sidehustle.top.</p>
       </section>
       <section class="info-section">
         <h2>Information We Collect</h2>

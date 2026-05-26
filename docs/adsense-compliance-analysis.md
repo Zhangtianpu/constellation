@@ -145,7 +145,7 @@ Google 提示的问题：
     
     <div class="footer-section">
       <h3>Contact</h3>
-      <p>contact@constellation.sidehustle.top</p>
+      <p>contact@sidehustle.top</p>
     </div>
   </div>
   
@@ -288,7 +288,7 @@ Google 提示的问题：
     <section>
       <h2>Contact Us</h2>
       <p>If you have questions about this Privacy Policy, contact us at:</p>
-      <p>Email: contact@constellation.sidehustle.top</p>
+      <p>Email: contact@sidehustle.top</p>
     </section>
   </article>
 </body>
@@ -346,7 +346,7 @@ Google 提示的问题：
     
     <section>
       <h2>7. Contact</h2>
-      <p>Questions? Contact us at: contact@constellation.sidehustle.top</p>
+      <p>Questions? Contact us at: contact@sidehustle.top</p>
     </section>
   </article>
 </body>
