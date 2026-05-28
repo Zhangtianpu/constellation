@@ -44,7 +44,7 @@ export class HomePage {
     title.innerHTML = `
       <div class="title-star">✦</div>
       <h1>${i18n.t('appTitle')}</h1>
-      <p class="subtitle">Starlight Constellation</p>
+      <p class="subtitle">Constellation Game</p>
       <div class="title-star">✦</div>
     `;
     topSection.appendChild(title);

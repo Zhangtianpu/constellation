@@ -1,7 +1,7 @@
 const translations = {
   en: {
     appTitle: 'Starlight Constellation',
-    appDesc: 'Find your constellation among the stars',
+    appDesc: 'Connect the stars to reveal constellations — Free online game',
     homeSubtitle: 'Connect the stars, discover constellations, explore the cosmos',
     classicMode: 'Classic',
     classicSub: 'Constellation Lines',
@@ -117,7 +117,7 @@ const translations = {
   },
   zh: {
     appTitle: '星光星座',
-    appDesc: '在璀璨星空中，找到属于你的星座',
+    appDesc: '连接星星揭示星座 — 免费在线游戏',
     homeSubtitle: '点击星星，连线星座，探索星空的奥秘',
     classicMode: '经典模式',
     classicSub: '星座连线',
